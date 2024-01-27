@@ -1,0 +1,47 @@
+{
+  "name": "node-api-ts",
+  "version": "1.0.0",
+  "description": "API with Node.js and TypeScript",
+  "main": "build/app.js",
+  "scripts": {
+    "prebuild": "rimraf ./build",
+    "build": "npx tsc -p ./",
+    "start": "node ./",
+    "dev": "npx nodemon ./src/app.ts",
+    "pretest": "npm run build",
+    "test": "npx jest"
+  },
+  "keywords": [
+    "node.js",
+    "jest",
+    "unit testing",
+    "mongodb",
+    "express",
+    "api",
+    "typescript"
+  ],
+  "author": "Mahmoud Kassem",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.12.0",
+    "mongodb": "^6.3.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^29.5.11",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.6",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
